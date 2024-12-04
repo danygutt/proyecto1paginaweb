@@ -1,0 +1,688 @@
+/* Selector universal */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+/* estilos.css */
+
+
+/* Estilo para el encabezado */
+
+
+
+main {
+  margin-top: 40px; 
+  padding-bottom: 200px;
+  background-color: #f4f4f4;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333; 
+  line-height: 1.6;
+}
+
+a img{
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;  
+  justify-content: flex-start;  
+  background-color: rgb(57, 147, 170);
+  color: white;
+  padding: 0.625rem 1rem;
+}
+
+nav {
+  margin-left: 1rem;  
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex; 
+  margin: 0;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white; 
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #050505; 
+}
+
+h1, h2 {
+  font-size: 1.5rem; 
+  color:rgb(57, 147, 170);
+
+}
+
+section {
+  padding: 1.25rem; 
+}
+
+/*-----------footer------------*/
+
+footer {
+  text-align: center;
+  padding: 0rem;
+  background-color: rgb(57, 147, 170);
+  color: white;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+footer .footer-content h2 {
+  color: #fff;
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+footer .social-media {
+  display: flex;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+}
+
+footer .social-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+footer .social-icon:hover {
+  transform: scale(1.2);
+}
+
+/*----- menu responsive -------*/
+
+nav .menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav .menu li {
+  margin: 0 15px;
+}
+
+nav .menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav .menu-toggle {
+  display: none; 
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav .menu {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(57, 147, 170);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+  }
+
+  nav .menu li {
+    margin: 10px 0;
+  }
+
+  nav .menu-toggle {
+    display: block;
+  }
+
+  nav .menu.show {
+    display: flex; 
+  }
+}
+
+
+/*----*/
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem; 
+  margin: 0 auto;
+  background-color: white;
+  padding: 1.25rem; 
+  border-radius: 0.3125rem; 
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
+}
+
+input, textarea {
+  margin-bottom: 0.625rem; 
+  padding: 0.625rem; 
+  border: 1px solid #ccc;
+  border-radius: 0.3125rem; 
+}
+
+button {
+  background-color: rgb(57, 147, 170);
+  color: white;
+  border: none;
+  padding: 0.625rem; 
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(57, 147, 170);
+}
+
+@media (max-width: 768px) {
+  .header{
+    background-attachment: scroll;
+  }
+}
+
+/*----------
+    Main
+------------*/
+.productos{
+
+  width: 100%;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  padding: 1rem 4rem;
+}
+
+.productos__titulo{
+
+  width: 100%;
+
+  padding: 4rem;
+
+  text-align: center;
+
+
+}
+.productos__producto{
+
+  width: 30%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+
+}
+
+.producto__imagen{
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+
+  border-radius: 2rem;
+}
+
+.producto__enlace{
+padding: 0.5rem 1rem;
+background: mistyrose;
+border-radius: 20rem;
+display: inline-block;
+
+
+}
+
+.producto__megusta{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+}
+
+.producto__megusta:hover{
+  color: red;
+  transition: 1s;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+}
+
+/*----------
+    estilo clips
+------------*/
+
+.clips {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 50px; 
+}
+
+
+.clips h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif; 
+  letter-spacing: 1px;
+  color:rgb(57, 147, 170); 
+}
+
+
+.clips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; 
+}
+
+.clips iframe {
+  width: 100%;
+  max-width: 1000px; 
+  height: 260px; 
+  border: none;
+  border-radius: 15px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease; 
+}
+
+.clips iframe:hover {
+  transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px) {
+  .clips iframe {
+    width: 100%;
+    max-width: 100%; 
+    height: 250px; 
+  }
+  .clips h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ------------
+    Css para la pagina de musica
+--------------- */
+.musica {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px auto;
+  width: 45rem;
+}
+
+.musica h1 {
+  font-size: 2.5rem;
+  color:rgb(57, 147, 170);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.musica h2 {
+  font-size: 1.8rem;
+  color:rgb(57, 147, 170);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.musica p {
+  text-align: center;
+  font-size: 1.2em;
+
+}
+
+.cancion {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.album-cover {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: rgb(57, 147, 170);
+  margin: 10px 0;
+}
+
+audio {
+  width: 100%;
+  max-width: 300px;
+  background-color: rgb(57, 147, 170);
+  border-radius: 35px;
+  padding: 10px;
+}
+
+
+
+
+/* Estilo para la sección de contacto (preguntame) */
+.preguntame {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(57, 147, 170);
+}
+
+.preguntame h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color:rgb(57, 147, 170);
+}
+
+.preguntame label {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  display: block;
+  color: #555;
+}
+
+.preguntame input,
+.preguntame textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.preguntame input:focus,
+.preguntame textarea:focus {
+  border-color: rgb(57, 147, 170); 
+  outline: none;
+}
+
+.preguntame button {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(57, 147, 170); 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.preguntame button:hover {
+  background-color: rgb(57, 147, 170) 
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .preguntame {
+    padding: 15px;
+  }
+}
+
+
+/* Estilo para las secciones de juegos */
+
+section.titulo_videojuegos h1{
+  font-family: 'Arial', sans-serif;
+  font-size: 36px; 
+  color:rgb(57, 147, 170);
+  text-align: center; 
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+  margin: 20px 0; 
+  padding: 10px 0; 
+  background-color: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0px 4px 6px rgb(57, 147, 170);
+  width: 45rem;
+  margin: 20px auto;
+
+}
+
+section.game {
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(57, 147, 170);
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+section.game img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+section.game h2 {
+  font-size: 1.8rem;
+  color:rgb(57, 147, 170);
+  margin-top: 10px;
+}
+
+section.game p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+section.game .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(57, 147, 170); 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+section.game .btn:hover {
+  background-color: rgb(31, 91, 105); 
+}
+
+/* Estilos para la galería de memes */
+.galeria {
+  text-align: center;
+}
+
+.galeria h1 {
+  font-size: 36px;
+  color:rgb(57, 147, 170);
+  margin-bottom: 20px;
+}
+
+/* Estilo para las imágenes dentro de <figure> */
+figure {
+  display: inline-block;
+  margin: 15px;
+}
+
+figure a {
+  display: block;
+}
+
+figure img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la visualización de la imagen y comentarios */
+.visualizador {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 20px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.imagen-container img {
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.comentarios {
+  max-width: 400px;
+  padding-left: 20px;
+}
+
+.comentarios h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.comentarios-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.likes button {
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  cursor: not-allowed;
+  border-radius: 5px;
+}
+
+.likes button:disabled {
+  background-color: #f31717;
+  cursor: not-allowed;
+}
+
+.comentarios-lista {
+  margin-top: 20px;
+}
+
+.comentarios-lista ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.comentarios-lista li {
+  background-color: #b3b3b3;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/*------ biografia --------*/
+
+.bienvenida, .dondeVivo, .biografia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto; 
+  max-width: 1100px; 
+}
+
+.bienvenida h1, .dondeVivo h1, .biografia h2 {
+  margin-bottom: 10px;
+  color: rgb(57, 147, 170);
+}
+
+.dondeVivo iframe {
+  margin-top: 20px;
+  max-width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+

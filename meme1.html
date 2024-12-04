@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizador de Imagen</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <a href="biografia.html">
+      <img src="img/logo.jpg" alt="logo de la pagina">
+    </a>
+    <nav>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776; 
+      </button>
+      <ul class="menu">
+        <li><a href="biografia.html">Biografia</a></li>
+        <li><a href="videojuegos.html">Videojuegos</a></li>
+        <li><a href="clips.html">Clips</a></li>
+        <li><a href="musica.html">Musica</a></li>
+        <li><a href="memes.html">Memes</a></li>
+        <li><a href="preguntame.html">Preguntame</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="visualizador">
+      <figure class="imagen-container">
+        <img src="img/segurmania_memes_grafica_destacada.jpg" alt="Imagen Visualizada" id="imagen">
+      </figure>
+
+      <article class="comentarios">
+        <h2>Comentarios</h2>
+        <section class="comentarios-box">
+          <textarea placeholder="Deja tu comentario..." rows="4" readonly></textarea>
+        </section>
+
+        <section class="likes">
+          <button disabled>👍 Me gusta</button>
+          <p>Likes: 0</p>
+        </section>
+
+        <section class="comentarios-lista">
+          <h3>Comentarios recientes:</h3>
+          <ul>
+            <li>Mi abuela hace mejores chistes</li>
+            <li>Ig de la abuela del de arriba?</li>
+          </ul>
+        </section>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer-content">
+      <p>Desarrollado por danygutt</p>
+      
+      <section class="social-media">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/140px-X_logo_2023.svg.png" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+        </a>
+      </section>
+    </section>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
